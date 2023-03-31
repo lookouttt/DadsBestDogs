@@ -1,7 +1,8 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: "Oswald", sans-serif;
-    background-color: #f5f2eb;
+    background-color: #ECCB95;
 }
 
 h1, h2, h3 {
@@ -23,8 +24,10 @@ h2 {
 }
 
 .site-footer {
-    background-image: linear-gradient(#82C6D1, #DBBFBC);
-    padding: 20px 0;
+    text-align: center;
+    color: #F89921;
+    background-color: black;
+    padding: 1em 0;
 }
 
 .row-content {
@@ -73,6 +76,10 @@ h2 {
     }
 }
 
+.dbd-social {
+    color: black;
+}
+
 .card-header {
     background-color: #284C85;
     color: white;
@@ -82,7 +89,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5); }
   
   .carousel {
-    border: solid #284C85; }
+    border: 0; }
   
   #carouselButton {
     position: absolute;
@@ -108,4 +115,32 @@ h2 {
 
 .close {
     color:white;
+}
+
+ .site-footer a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .calendar-map-card {
+    padding: 2em 0em;
+  }
+
+  #calendar-header #map-header {
+    color: #F89921;
+    background-color: black;
+  }
+
+  .map-responsive{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
