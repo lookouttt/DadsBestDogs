@@ -86,7 +86,15 @@ h2 {
 }
 
 .carousel {
-    border: 0; }
+    border: 0; 
+}
+
+#carouselDbd .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 75vh;
+    overflow: hidden;
+}
   
 .modal-header {
     background-color: #284C85;
@@ -94,6 +102,11 @@ h2 {
 
 .modal-title {
     color: white;
+}
+
+.modal-open {
+    overflow: auto;
+    padding-right: 0 !important;
 }
 
 .close {
