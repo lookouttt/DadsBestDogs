@@ -2,11 +2,12 @@
   "name": "dadsbestdogs",
   "version": "1.0.0",
   "description": "Dad's Best Dogs Website",
-  "main": "index.html",
+  "default": "index.html",
   "scripts": {
     "lite": "lite-server",
     "start": "npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "parcel build index.html --no-source-maps --public-url ./"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,9 @@
     "bootstrap-social": "^5.1.1"
   },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "lite-server": "^2.6.1",
+    "parcel": "^2.8.3",
+    "webpack": "^5.77.0",
+    "webpack-cli": "^5.0.1"
   }
 }
