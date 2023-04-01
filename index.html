@@ -63,7 +63,7 @@
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                                    <button onclick="emailContactForm(event)" id="submitButton" type="submit" class="btn btn-primary mb-2">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -139,5 +139,19 @@
         </footer>
         <script type="module" src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
         <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script>
+            function emailContactForm(e) {
+                e.preventDefault();
+                const firstName = document.getElementById("contactFirstName").value;
+                const lastName = document.getElementById("contactLastName").value;
+                const email = document.getElementById("contactEmail").value;
+                const text = document.getElementById("contactDetails").value;
+                fetch('https://www.dadsbestdogs.com/contact', {
+                    method: 'POST',
+                    body: JSON.stringify({ firstName, lastName, email, text })
+                
+                }).then(res => res.json())
+            }
+        </script>
     </body>
 </html>
