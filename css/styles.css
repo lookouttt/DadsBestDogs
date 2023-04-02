@@ -133,6 +133,11 @@ h2 {
     background-color: black;
 }
 
+#menu_items {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .site-footer {
     text-align: center;
     color: #F89921;
