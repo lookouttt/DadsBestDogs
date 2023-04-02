@@ -63,7 +63,7 @@
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <button onclick="emailContactForm(event)" id="submitButton" type="submit" class="btn btn-primary mb-2">Submit</button>
+                                    <button onclick="emailContactForm(event)" id="submitButton" type="submit" data-bs-dismiss="modal" class="btn btn-primary mb-2">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -111,20 +111,18 @@
                     <div class="card" id="calendar_card" style="width: 25rem; height: 30rem">
                         <div class="card-header" id="calendar-header" style="color: #F89921;
                         background-color: black">Truck Schedule</div>
-                        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&mode=AGENDA&showTitle=0&showNav=0&showPrint=0&showTabs=0&showCalendars=0&src=ZWVlNmZlZGYyYjk0NTgwYjcwZTEzZWE3Y2FiNmMxNjMzY2I2YjBjMDVlOGNlYjc4ODE4NTdmMzkzZDlmNTAyYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style="border:solid 1px #777" width="100%" height="100%" frameborder="0" scrolling="no" class="card-body"></iframe>
-                        <!-- <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> -->
+                        <div class="card-body" style="padding: 0">
+                            <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&mode=AGENDA&showTitle=0&showNav=0&showPrint=0&showTabs=0&showCalendars=0&src=ZWVlNmZlZGYyYjk0NTgwYjcwZTEzZWE3Y2FiNmMxNjMzY2I2YjBjMDVlOGNlYjc4ODE4NTdmMzkzZDlmNTAyYUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23F09300" style="border:solid 1px #777" width="100%" height="100%" frameborder="0" scrolling="no" class="card-body"></iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card" id="map_card" style="width: 20rem; height: 30rem">
+                    <div class="card" id="map_card" style="width: 25rem; height: 30rem">
                         <div class="card-header" id="map-header" style="color: #F89921;
                         background-color: black">Where We'll Be</div>
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1FgtYuCHL3Zb0D3kWPAZNxvIY7oxOSH4&ehbc=2E312F" width="100%" height="100%" style="border:0;"></iframe>
-                        <!-- <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div> -->
+                        <div class="card-body" style="padding: 0">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1FgtYuCHL3Zb0D3kWPAZNxvIY7oxOSH4&ehbc=2E312F" width="100%" height="100%" style="border:0"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -166,6 +164,12 @@
                     body: JSON.stringify({ firstName: firstName, lastName: lastName, email: email, text: text })
                 
                 }).then(res => res.json())
+                .then(() => {
+                    document.getElementById("contactFirstName").value = "";
+                    document.getElementById("contactLastName").value = "";
+                    document.getElementById("contactEmail").value = "";
+                    document.getElementById("contactDetails").value = "";
+                })
             }
         </script>
     </body>
