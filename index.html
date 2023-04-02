@@ -148,7 +148,10 @@
                 const text = document.getElementById("contactDetails").value;
                 fetch('https://www.dadsbestdogs.com/contact', {
                     method: 'POST',
-                    body: JSON.stringify({ firstName, lastName, email, text })
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ firstName: firstName, lastName: lastName, email: email, text: text })
                 
                 }).then(res => res.json())
             }
