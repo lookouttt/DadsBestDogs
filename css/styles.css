@@ -31,7 +31,7 @@ h2 {
 }
 
 div {
-    scroll-margin-top: 10rem;
+    scroll-margin-top: 11rem;
 }
 
 .navbar {
@@ -140,6 +140,11 @@ div {
 #menu_items {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+#our_story {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .site-footer {
