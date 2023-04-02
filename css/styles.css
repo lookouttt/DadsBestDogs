@@ -30,6 +30,10 @@ h2 {
     color: black;
 }
 
+div {
+    scroll-margin-top: 10rem;
+}
+
 .navbar {
     background-color: black;
     padding-left: 1rem;
