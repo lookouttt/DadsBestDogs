@@ -30,22 +30,6 @@ h2 {
     color: black;
 }
 
-#cmc-header {
-    text-align: center;
-}
-
-.site-footer {
-    text-align: center;
-    color: #F89921;
-    background-color: black;
-    padding: 1em 0;
-}
-
-.site-footer a {
-    color: inherit;
-    text-decoration: none;
-}
-
 .navbar {
     background-color: black;
     padding-left: 1rem;
@@ -62,71 +46,6 @@ h2 {
 
 }
 
-/* @media screen and (min-width: 992px) {
-    .dropdown-menu .dropdown-submenu {
-        display: none;
-        position: absolute;
-        left: 100%;
-        top: var(--top);
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .dropdown-menu .dropdown-submenu {
-        display: none;
-        position: absolute;
-        left: 75%;
-        top: var(--top);
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .dropdown-menu .dropdown-submenu {
-        display: none;
-        position: absolute;
-        left: 50%;
-        top: var(--top);
-    }
-} */
-
-.dbd-social {
-    color: black;
-}
-
-.card-header {
-    background-color: #284C85;
-    color: white;
-}
-
-.carousel {
-    border: 0; 
-}
-
-#carouselDbd .carousel-caption {
-    top: 7rem;
-    bottom: auto;
-}
-
-#carouselDbd .carousel-caption h1 {
-    font-family: "Roboto-Slab", serif;
-    font-size: 8rem;
-    color: #F89921;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-
-#carouselDbd .carousel-caption h2 {
-    font-family: "Roboto-Slab", serif;
-    font-size: 4rem;
-    color: #F89921;
-    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
-}
-
-#carouselDbd .carousel-item img {
-    object-fit: cover;
-    object-position: center;
-    height: 90vh;
-    overflow: hidden;
-}
-  
 .modal-header {
     background-color: #284C85;
 }
@@ -144,6 +63,67 @@ h2 {
     color:white;
 }
 
+.carousel {
+    border: 0; 
+}
+
+#carouselDbd .carousel-caption {
+    top: 7rem;
+    bottom: auto;
+}
+
+#carouselDbd .carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    height: 90vh;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    #carouselDbd .carousel-caption h1 {
+        font-family: "Roboto-Slab", serif;
+        font-size: 8rem;
+        color: #F89921;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    #carouselDbd .carousel-caption h2 {
+        font-family: "Roboto-Slab", serif;
+        font-size: 4rem;
+        color: #F89921;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+}
+
+@media (max-width: 767px) {
+    #carouselDbd .carousel-caption h1 {
+        font-family: "Roboto-Slab", serif;
+        font-size: 5rem;
+        color: #F89921;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    #carouselDbd .carousel-caption h2 {
+        font-family: "Roboto-Slab", serif;
+        font-size: 2rem;
+        color: #F89921;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+}
+
+#cmc-header {
+    text-align: center;
+}
+
+.card-header {
+    background-color: #284C85;
+    color: white;
+}
+
+#calendar-map-row {
+    margin-top: 2rem;
+}
+  
 .calendar-map-card {
     padding: 2em 0em;
 }
@@ -151,6 +131,22 @@ h2 {
 #calendar-header #map-header {
     color: #F89921;
     background-color: black;
+}
+
+.site-footer {
+    text-align: center;
+    color: #F89921;
+    background-color: black;
+    padding: 1em 0;
+}
+
+.site-footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.dbd-social {
+    color: black;
 }
 
 .map-responsive {
