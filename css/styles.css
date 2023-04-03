@@ -12,7 +12,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto-Slab", serif;
-    background-color: #ECCB95;
+    /* background-color: #ECCB95; */
+    background-image: linear-gradient(to right, #edd8b8, #eccb95, #eed5a8, #f0d378);
     overscroll-behavior: none;
 }
 
@@ -145,6 +146,10 @@ div {
 #our_story {
     margin-top: 4rem;
     margin-bottom: 4rem;
+}
+
+#our_story_text, #our_story_image {
+    padding-top: 1rem;
 }
 
 .site-footer {
