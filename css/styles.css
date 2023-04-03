@@ -80,7 +80,6 @@ div {
 #carouselDbd .carousel-item img {
     object-fit: cover;
     object-position: center;
-    height: 90vh;
     overflow: hidden;
 }
 
@@ -98,6 +97,10 @@ div {
         color: #F89921;
         text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     }
+
+    #carouselDbd .carousel-item img {
+        height: 90vh;
+    }
 }
 
 @media (max-width: 767px) {
@@ -113,6 +116,10 @@ div {
         font-size: 2rem;
         color: #F89921;
         text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    #carouselDbd .carousel-item img {
+        height: 50vh;
     }
 }
 
