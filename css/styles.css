@@ -101,7 +101,7 @@ div {
         font-family: "Roboto-Slab", serif;
         font-size: 4rem;
         color: #F89921;
-        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
     #carouselDbd .carousel-item img {
@@ -127,7 +127,7 @@ div {
         font-family: "Roboto-Slab", serif;
         font-size: 3rem;
         color: #F89921;
-        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
     #carouselDbd .carousel-item img {
@@ -146,14 +146,14 @@ div {
         font-family: "Roboto-Slab", serif;
         font-size: 3rem;
         color: #F89921;
-        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
     #carouselDbd .carousel-caption h2 {
         font-family: "Roboto-Slab", serif;
         font-size: 1.5rem;
         color: #F89921;
-        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
     #carouselDbd .carousel-item img {
