@@ -52,11 +52,15 @@ div {
 }
 
 .modal-header {
-    background-color: #284C85;
+    background-color: black;
 }
 
 .modal-title {
-    color: white;
+    color: #F89921;
+}
+
+.modal-body {
+    background-color: #f0e9dd;
 }
 
 .modal-open {
@@ -64,8 +68,19 @@ div {
     padding-right: 0 !important;
 }
 
-.close {
-    color:white;
+.modal-close {
+    color: white;
+    opacity: 1;
+}
+
+.modal-close:hover {
+    color: #f0e9dd;
+}
+
+.btn-primary.btn-primary {
+    background-color: black;
+    color: #F89921;
+    border: 0;
 }
 
 .carousel {
@@ -166,8 +181,8 @@ div {
 }
 
 .card-header {
-    background-color: #284C85;
-    color: white;
+    color: #F89921;
+    background-color: black;
 }
 
 #calendar-map-row {
