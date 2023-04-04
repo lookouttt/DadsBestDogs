@@ -84,6 +84,12 @@ div {
 }
 
 @media (min-width: 768px) {
+
+    #carouselDbd .carousel-caption {
+        top: 4rem;
+        bottom: auto;
+    }
+
     #carouselDbd .carousel-caption h1 {
         font-family: "Roboto-Slab", serif;
         font-size: 8rem;
@@ -99,11 +105,17 @@ div {
     }
 
     #carouselDbd .carousel-item img {
-        height: 90vh;
+        height: 70vh;
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 577px) and (max-width: 767px) {
+
+    #carouselDbd .carousel-caption {
+        top: 2.5rem;
+        bottom: auto;
+    }
+
     #carouselDbd .carousel-caption h1 {
         font-family: "Roboto-Slab", serif;
         font-size: 5rem;
@@ -113,13 +125,39 @@ div {
 
     #carouselDbd .carousel-caption h2 {
         font-family: "Roboto-Slab", serif;
-        font-size: 2rem;
+        font-size: 3rem;
         color: #F89921;
         text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     }
 
     #carouselDbd .carousel-item img {
-        height: 50vh;
+        height: 55vh;
+    }
+}
+
+@media (max-width: 576px) {
+
+    #carouselDbd .carousel-caption {
+        top: 1rem;
+        bottom: auto;
+    }
+
+    #carouselDbd .carousel-caption h1 {
+        font-family: "Roboto-Slab", serif;
+        font-size: 3rem;
+        color: #F89921;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    #carouselDbd .carousel-caption h2 {
+        font-family: "Roboto-Slab", serif;
+        font-size: 1.5rem;
+        color: #F89921;
+        text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    }
+
+    #carouselDbd .carousel-item img {
+        height: 40vh;
     }
 }
 
