@@ -38,15 +38,15 @@
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
-                            <form>
+                            <form class="needs-validation">
                                 <div class="form-row">
                                     <div class="col-md-4 mb-3">
-                                    <label for="contactFirstName">First name</label>
-                                    <input type="text" class="form-control" id="contactFirstName" placeholder="First name" required>
+                                        <label for="contactFirstName">First name</label>
+                                        <input type="text" class="form-control" id="contactFirstName" placeholder="First name" required>
                                     </div>
                                     <div class="col-md-4 mb-3">
-                                    <label for="contactLastName">Last name</label>
-                                    <input type="text" class="form-control" id="contactLastName" placeholder="Last name" required>
+                                        <label for="contactLastName">Last name</label>
+                                        <input type="text" class="form-control" id="contactLastName" placeholder="Last name" required>
                                     </div>
                                 </div>
                                 <div class="row form-group">
@@ -63,7 +63,7 @@
                                     </div>
                                 </div>
                                 <div class="col-auto">
-                                    <button onclick="emailContactForm(event)" id="submitButton" type="submit" data-bs-dismiss="modal" class="btn btn-primary mb-2">Submit</button>
+                                    <button  id="submitButton" type="submit" class="btn btn-primary mb-2">Submit</button>
                                 </div>
                             </form>
                         </div>
@@ -282,6 +282,26 @@
                 element.classList.remove("show");
                 window.location.assign(e.target.href);
             }
+        </script>
+        <script>
+            (function () {
+                'use strict'
+                const forms = document.querySelectorAll('.needs-validation')
+                Array.prototype.slice.call(forms)
+                    .forEach(function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault()
+                                event.stopPropagation()
+                            }
+                            else {
+                                emailContactForm(event);
+                                const element = document.getElementById("myModal");
+                                element.classList.remove('show');
+                            }
+                        }, false)
+                    })
+            })()
         </script>
     </body>
 </html>
