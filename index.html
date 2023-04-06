@@ -23,7 +23,7 @@
                         <li class="nav-item" onclick="closeToggler(event)"><a class="nav-link" href="#menu_items">Menu</a></li>
                         <li class="nav-item" onclick="closeToggler(event)"><a class="nav-link" href="#our_story">Our Story</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#">Photos</a></li> -->
-                        <li class="nav-item" onclick="closeToggler(event)"><a class="nav-link" href="#myModal" data-bs-toggle="modal">Contact</a></li>
+                        <li class="nav-item" onclick="closeToggler(event)"><a class="nav-link" id="modalLink" href="#myModal" data-bs-toggle="modal">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -251,6 +251,7 @@
         </footer>
         <script type="module" src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
         <script type="module" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
         <script>
             function emailContactForm(e) {
                 e.preventDefault();
@@ -296,8 +297,7 @@
                             }
                             else {
                                 emailContactForm(event);
-                                const element = document.getElementById("myModal");
-                                element.classList.remove('show');
+                                closeModal();
                             }
                         }, false)
                     })
