@@ -2,12 +2,12 @@
   "name": "dadsbestdogs",
   "version": "1.0.0",
   "description": "Dad's Best Dogs Website",
-  "default": "index.html",
+  "default": "src/index.html",
   "scripts": {
-    "lite": "lite-server",
+    "lite": "lite-server --baseDir='src'",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "parcel build index.html --no-source-maps --public-url ./"
+    "bundle": "parcel build src/index.html --no-source-maps --public-url ./"
   },
   "author": "",
   "license": "ISC",
