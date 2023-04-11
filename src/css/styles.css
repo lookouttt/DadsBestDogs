@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Oswald";
-    src: url('../fonts/Oswald-Regular.ttf');
+    font-family: "Roboto";
+    src: url('../fonts/Roboto-Regular.ttf');
 }
 
 @font-face {
@@ -8,27 +8,32 @@
     src: url('../fonts/RobotoSlab-Bold.ttf');
 }
 
+@font-face {
+    font-family: "Shadows Into Light";
+    src: url('../fonts/ShadowsIntoLight-Regular.ttf');
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto-Slab", serif;
+    font-family: "Roboto", sans-serif;
     /* background-color: #ECCB95; */
-    background-image: linear-gradient(to right, #edd8b8, #eccb95, #eed5a8, #f0d378);
+    background-image: linear-gradient(to right, #edd8b8, #eed5a8, #eccb95, #eed5a8, #edd8b8);
     overscroll-behavior: none;
 }
 
-h1, h2, h3 {
-    font-family: "Roboto-Slab", serif;
+h1, h2, h3, h4, h5 {
+    font-family: "Roboto Slab", serif;
 }
 
 h1 {
-    color: black;
+    color: #313131;
     font-weight: bold;
     align-self: center;
 }
 
 h2 {
-    color: black;
+    color: #313131;
 }
 
 div {
@@ -42,13 +47,13 @@ div {
 }
 
 .nav-item {
-    padding: 1rem 1.3rem;
+    padding: 1rem 1.1rem;
 }
 
 .nav-link {
     color: #F89921;
-    font-size: 1.4rem;
-
+    font-size: 1.2rem;
+    font-family: "Roboto Slab", serif;
 }
 
 .modal-header {
@@ -106,14 +111,14 @@ div {
     }
 
     #carouselDbd .carousel-caption h1 {
-        font-family: "Roboto-Slab", serif;
+        font-family: "Roboto Slab", serif;
         font-size: 8rem;
         color: #F89921;
         text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     }
 
     #carouselDbd .carousel-caption h2 {
-        font-family: "Roboto-Slab", serif;
+        font-family: "Roboto Slab", serif;
         font-size: 4rem;
         color: #F89921;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -132,14 +137,14 @@ div {
     }
 
     #carouselDbd .carousel-caption h1 {
-        font-family: "Roboto-Slab", serif;
+        font-family: "Roboto Slab", serif;
         font-size: 5rem;
         color: #F89921;
         text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     }
 
     #carouselDbd .carousel-caption h2 {
-        font-family: "Roboto-Slab", serif;
+        font-family: "Roboto Slab", serif;
         font-size: 3rem;
         color: #F89921;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -158,14 +163,14 @@ div {
     }
 
     #carouselDbd .carousel-caption h1 {
-        font-family: "Roboto-Slab", serif;
+        font-family: "Roboto Slab", serif;
         font-size: 3rem;
         color: #F89921;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
     #carouselDbd .carousel-caption h2 {
-        font-family: "Roboto-Slab", serif;
+        font-family: "Roboto Slab", serif;
         font-size: 1.5rem;
         color: #F89921;
         text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -178,11 +183,6 @@ div {
 
 #cmc-header {
     text-align: center;
-}
-
-.card-header {
-    color: #F89921;
-    background-color: black;
 }
 
 #calendar-map-row {
@@ -198,18 +198,107 @@ div {
     background-color: black;
 }
 
+.menu-card {
+    background-image: url('../img/white_paper.jpg');
+}
+
+.menu-entry {
+    margin: 1em 0em;
+}
+
+.dads-header {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    color: #313131;
+}
+
+.entry-header {
+    font-size: 1.5rem;
+}
+
+#dads-menu {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#menu-intro {
+    padding: 1rem 1rem 0rem 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
 #menu_items {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.menu-header .menu-body {
+    background-image: url('../img/white_paper.jpg');
+}
+
+/* #dbd-inner > .active {
+    height: 50rem;
+} */
+
+@media (max-width: 767px) {
+    #dbd-inner .carousel-item > div {
+        display: none;
+    }
+    #dbd-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+#dbd-inner .carousel-item.active,
+#dbd-inner .carousel-item-next,
+#dbd-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* medium and up screens */
+@media (min-width: 768px) {
+    
+    #dbd-inner .carousel-item-end.active,
+    #dbd-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+    
+    #dbd-inner .carousel-item-start.active, 
+    #dbd-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+}
+
+#dbd-inner .carousel-item-end,
+#dbd-inner .carousel-item-start { 
+  transform: translateX(0);
+}
+
+/* @media (min-width: 768px) {
+    #dbd-inner {
+      display: flex;
+    }
+    #dbd-inner > .carousel-item {
+      margin-right: 0;
+      flex: 0 0 33.333333%;
+      display: block;
+    }
+} */
 
 #our_story {
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
 
-#our_story_text, #our_story_image {
+#our_story_image {
+    padding-top: 3rem;
+}
+
+#our_story_text {
     padding-top: 1rem;
+}
+
+#our_story_text h5 {
+    font-family: 'Roboto', sans-serif;
 }
 
 .site-footer {
@@ -225,10 +314,10 @@ div {
 }
 
 .dbd-social {
-    color: black;
+    color: white;
 }
 
-.map-responsive {
+/* .map-responsive {
     overflow:hidden;
     padding-bottom:50%;
     position:relative;
@@ -240,4 +329,4 @@ div {
     height:100%;
     width:100%;
     position:absolute;
-}
+} */
