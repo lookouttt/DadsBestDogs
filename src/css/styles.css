@@ -47,12 +47,12 @@ div {
 }
 
 .nav-item {
-    padding: 1rem 1.1rem;
+    padding: 1rem 0.8rem;
 }
 
 .nav-link {
     color: #F89921;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-family: "Roboto Slab", serif;
 }
 
